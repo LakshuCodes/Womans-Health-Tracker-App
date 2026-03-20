@@ -4,8 +4,8 @@ A comprehensive women's health & period tracking mobile application built with *
 
 ---
 
-## 📱 LINK 
-[YT](https://youtu.be/ICgHUbHjEcM?si=b2jt4Q9RfbPq9Tri)
+## 📱 VIEW the final App 
+[🌸 Womans Health Tracker App](https://youtu.be/ICgHUbHjEcM?si=b2jt4Q9RfbPq9Tri)
 
 
 
