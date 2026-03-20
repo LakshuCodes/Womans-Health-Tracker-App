@@ -1,233 +1,145 @@
-# 🌸 Ovia — Period Tracker App
+# 🌸 Womans Health Tracker App
 
-A full-stack mobile application built with **React Native (Expo)** for the frontend and a separate backend service. This app helps users track their menstrual cycle, manage PCOS/PCOD, plan pregnancies, get AI-powered health insights, and more.
+A comprehensive women's health & period tracking mobile application built with **React Native** and **Expo**. Designed to help women track their menstrual cycles, monitor health, and gain insights into their wellness journey.
 
 ---
 
-## 📱 Features
+## 📱 LINK 
+[YT](https://youtu.be/ICgHUbHjEcM?si=b2jt4Q9RfbPq9Tri)
 
-### Main Features
-- 🤖 AI Chatbot for health queries
-- 🔔 Period reminders & notifications
-- 🩺 Doctor section (Dr. Sect)
-- 📊 Period tracking & cycle insights
-- 🏥 PCOS/PCOD management
-- 🤰 Pregnancy tracking
-- 💊 Medicine reminders
-- 📅 Appointment reminders
-- 🏃 Exercise modules
-- 🥗 Meal suggestions
 
-### Additional Features
-- 💬 In-app chat
-- 🐦 Twitter integration
-- 👫 Partner mode
+
+---
+
+## ✨ Features
+
+- 🩸 **Period Tracking** — Log period start dates and track cycle history
+- 📅 **Calendar View** — Visual calendar showing period days and predictions
+- 📊 **Insights** — Average cycle stats and personalized wellness tips
+- 💬 **AI Chatbot** — Health-focused chat assistant
+- 🏋️ **Exercise Tracker** — Log and browse workouts
+- 👩‍⚕️ **Doctor Connect** — Find and connect with healthcare providers
+- 🛍️ **Shop** — Browse health & wellness products
+- 👥 **Social** — Community and social features
+- 🔔 **Reminders** — Period and wellness reminders
+- 👤 **Profile** — Personal health profile management
+- 🌙 **Onboarding** — Smooth first-time user experience
+- 🔐 **Auth** — Login & Register screens
 
 ---
 
 ## 🗂️ Project Structure
 
 ```
-Tracker-App/
-├── backend/              # Backend service (API)
-├── frontend/
-│   └── ovia/             # React Native Expo app
-│       ├── assets/       # Images, icons, fonts
-│       ├── src/
-│       │   ├── components/    # Reusable UI components
-│       │   ├── navigation/    # App navigation setup
-│       │   │   └── AppNavigator.js
-│       │   ├── screens/       # All app screens
-│       │   │   ├── SplashScreen.js
-│       │   │   └── OnboardingScreen.js
-│       │   └── theme/         # Colors, fonts, styles
-│       │       └── colors.js
-│       ├── App.js
-│       ├── app.json
-│       └── package.json
-└── README.MD
+ovia/
+├── src/
+│   ├── screens/
+│   │   ├── SplashScreen.js
+│   │   ├── OnboardingScreen.js
+│   │   ├── LoginScreen.js
+│   │   ├── RegisterScreen.js
+│   │   ├── HomeScreen.js
+│   │   ├── CalendarScreen.js
+│   │   ├── ChatbotScreen.js
+│   │   ├── DoctorScreen.js
+│   │   ├── ExerciseScreen.js
+│   │   ├── ExerciseDetailScreen.js
+│   │   ├── InsightsScreen.js (planned)
+│   │   ├── NotificationsScreen.js
+│   │   ├── ProfileScreen.js
+│   │   ├── RemindersScreen.js
+│   │   ├── ShopScreen.js
+│   │   └── SocialScreen.js
+│   ├── components/
+│   ├── navigation/
+│   └── theme/
+├── assets/
+├── App.js
+├── app.json
+├── index.js
+└── package.json
 ```
-
----
-
-## ⚙️ Prerequisites
-
-Make sure you have the following installed before starting:
-
-| Tool | Version | Download |
-|------|---------|----------|
-| Node.js | 18 or above | [nodejs.org](https://nodejs.org) |
-| npm | comes with Node.js | — |
-| Expo CLI | latest | `npm install -g expo-cli` |
-| Git | latest | [git-scm.com](https://git-scm.com) |
-| Expo Go (mobile) | latest | [Play Store](https://play.google.com/store/apps/details?id=host.exp.exponent) / [App Store](https://apps.apple.com/app/expo-go/id982107779) |
 
 ---
 
 ## 🚀 Getting Started
 
-### Step 1: Clone the Repository
+### Prerequisites
 
+Make sure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (v18 or higher)
+- [Expo CLI](https://docs.expo.dev/get-started/installation/)
+- [Expo Go](https://expo.dev/client) app on your Android/iOS device
+
+### Installation
+
+1. **Clone the repository**
 ```bash
-git clone https://github.com/LakshuCodes/Tracker-App.git
-cd Tracker-App
+git clone https://github.com/LakshuCodes/Womans-Health-Tracker-App.git
+cd Womans-Health-Tracker-App/ovia
 ```
 
-### Step 2: Navigate to the Frontend
-
-```bash
-cd frontend/ovia
-```
-
-### Step 3: Install Dependencies
-
+2. **Install dependencies**
 ```bash
 npm install
 ```
 
-### Step 4: Install Expo-specific Dependencies
-
+3. **Start the development server**
 ```bash
-npx expo install expo-linear-gradient
-npx expo install react-native-screens
-npx expo install react-native-safe-area-context
-npx expo install react-native-gesture-handler
+npx expo start
 ```
 
-### Step 5: Install Navigation Libraries
-
-```bash
-npm install @react-navigation/native @react-navigation/stack
-```
-
-### Step 6: Start the Development Server
-
-```bash
-npx expo start --clear
-```
+4. **Run on your device**
+   - Scan the QR code with **Expo Go** (Android) or **Camera app** (iOS)
+   - Or press `a` for Android emulator / `i` for iOS simulator
 
 ---
 
-## 📲 Running on Your Device
+## 🛠️ Tech Stack
 
-### Option A: Physical Device (Recommended)
-1. Install **Expo Go** from Play Store or App Store
-2. Run `npx expo start --clear`
-3. Scan the QR code shown in terminal using Expo Go
-
-### Option B: Android Emulator
-1. Install [Android Studio](https://developer.android.com/studio)
-2. Set up a virtual device (Pixel 7, API 34 recommended)
-3. Start the emulator
-4. Run `npx expo start --clear` then press `a`
-
-### Option C: iOS Simulator (Mac only)
-1. Install Xcode from the App Store
-2. Run `npx expo start --clear` then press `i`
+| Technology | Purpose |
+|---|---|
+| React Native | Cross-platform mobile framework |
+| Expo | Development platform & tooling |
+| React Navigation | Screen navigation |
+| AsyncStorage | Local data persistence |
+| React Native Calendars | Calendar UI component |
+| date-fns | Date manipulation |
 
 ---
 
-## 📦 All Dependencies
-
-Here is a full list of dependencies used in this project:
+## 📦 Key Dependencies
 
 ```json
-"dependencies": {
-  "expo": "~52.0.0",
-  "expo-linear-gradient": "~14.0.0",
-  "expo-splash-screen": "~0.29.0",
-  "expo-status-bar": "~2.0.0",
-  "react": "18.3.1",
-  "react-native": "0.76.5",
-  "react-native-gesture-handler": "~2.20.2",
-  "react-native-safe-area-context": "4.12.0",
-  "react-native-screens": "~4.4.0",
-  "@react-navigation/native": "^6.1.18",
-  "@react-navigation/stack": "^6.4.1"
+{
+  "expo": "latest",
+  "react": "18.x",
+  "react-native": "0.74.x",
+  "@react-navigation/native": "^6.x",
+  "@react-navigation/bottom-tabs": "^6.x",
+  "@react-native-async-storage/async-storage": "^1.x",
+  "react-native-calendars": "^1.x",
+  "date-fns": "^3.x"
 }
 ```
 
-Install all at once:
-```bash
-npm install
-npx expo install expo-linear-gradient expo-splash-screen react-native-screens react-native-safe-area-context react-native-gesture-handler
-```
+---
+
+## 🎨 Design
+
+- **Primary Color:** `#E75480` (Deep Pink)
+- **Background:** `#FFF0F5` (Lavender Blush)
+- **Accent:** `#FFB6C1` (Light Pink)
+- **Theme:** Soft, feminine, health-focused UI
 
 ---
 
-## 🛠️ Common Errors & Fixes
+## 👩‍💻 Author
 
-### ❌ "Project is incompatible with this version of Expo Go"
-**Fix:** Update Expo Go app on your phone from Play Store / App Store.
-
-### ❌ "Unable to resolve asset ./assets/splash.png"
-**Fix:** Make sure `splash.png` and `logo.png` exist in `frontend/ovia/assets/`
-
-### ❌ "Something went wrong" on Expo Go
-**Fix:** Run with cache cleared:
-```bash
-npx expo start --clear
-```
-
-### ❌ Logo not showing
-**Fix:** Verify the path in `SplashScreen.js`:
-```js
-source={require('../../assets/logo.png')}
-```
-Make sure `logo.png` is in `ovia/assets/` folder.
+**LakshuCodes**  
+GitHub: [@LakshuCodes](https://github.com/LakshuCodes)
 
 ---
 
-## 👥 Team & Roles
-
-| Role | Responsibility |
-|------|---------------|
-| Frontend Developer | React Native UI, screens, navigation |
-| Backend Developer | API, database, authentication |
-
----
-
-## 🌿 Git Workflow
-
-```bash
-# Always pull latest before starting work
-git pull origin main
-
-# Create a new branch for your feature
-git checkout -b feature/your-feature-name
-
-# After making changes
-git add .
-git commit -m "feat: describe what you did"
-git push origin feature/your-feature-name
-
-# Then open a Pull Request on GitHub
-```
-
-### Branch Naming Convention
-- `feature/screen-name` — for new screens
-- `fix/bug-description` — for bug fixes
-- `chore/task-name` — for setup or config changes
-
----
-
-## 📁 Adding New Screens
-
-1. Create your screen file in `src/screens/YourScreen.js`
-2. Import and add it to `src/navigation/AppNavigator.js`:
-```js
-import YourScreen from '../screens/YourScreen';
-
-// Inside Stack.Navigator:
-<Stack.Screen name="YourScreen" component={YourScreen} />
-```
-3. Navigate to it from any screen:
-```js
-navigation.navigate('YourScreen');
-```
-
----
-
-## 📄 License
-
-This is a private project. All rights reserved © 2025 Ovia Team.
+> _Built with 💗 for women's health and wellness_
